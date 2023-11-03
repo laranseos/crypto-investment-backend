@@ -280,7 +280,6 @@ const updateUserProfile = asyncHandler(async (req, res) => {
       res.status(404);
       throw new Error('Can not add your child user');
     }
-  
 
   if (user) {
     user.username = req.body.username || user.username;
